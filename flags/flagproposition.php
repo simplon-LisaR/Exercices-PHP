@@ -10,5 +10,6 @@ if ($checkPays===$netherlands) {
   echo $_SESSION['netherlands'];
 }else {
   echo 'Faux ! Try again.';
+  header( "Refresh:1; url=questionnaire.php", true, 303);
 }
  ?>
